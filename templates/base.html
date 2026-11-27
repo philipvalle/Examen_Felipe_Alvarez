@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Examen{% endblock %} | Programación Web</title>
+    <!-- Hoja de estilos de todas las páginas, cargada desde la carpeta static -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body class="{% block clase_body %}{% endblock %}">
+    {% block contenido %}{% endblock %}
+</body>
+</html>

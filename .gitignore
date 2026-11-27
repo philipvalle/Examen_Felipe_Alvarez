@@ -1,0 +1,11 @@
+# Entorno virtual (no se sube a GitHub; se recrea con requirements.txt)
+venv/
+.venv/
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+
+# Configuración del IDE
+.idea/
+.vscode/

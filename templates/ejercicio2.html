@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}Ejercicio 2{% endblock %}
+
+{% block contenido %}
+<div class="tarjeta">
+    <h1>Inicio de sesión</h1>
+
+    <form action="{{ url_for('ejercicio2') }}" method="POST">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" id="nombre" name="nombre" maxlength="30"
+               value="{{ nombre }}" autocomplete="username" required>
+
+        <label for="contrasena">Ingresa tu contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" maxlength="30"
+               autocomplete="current-password" required>
+
+        <button type="submit">Verificar</button>
+    </form>
+
+    {% if mensaje %}
+    <p class="mensaje">{{ mensaje }}</p>
+    {% endif %}
+
+    <a href="{{ url_for('index') }}" class="volver">← Volver al menú</a>
+</div>
+{% endblock %}

@@ -1,0 +1,153 @@
+/* =========================================================
+   Estilos - Examen final Programación Web
+   Se cargan una sola vez desde templates/base.html
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* ---------- Menú principal ---------- */
+.pagina-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ejercicio1 {
+    background-color: #b00eb0;   /* morado */
+}
+
+.boton-ejercicio1:hover {
+    background-color: #8c0b8c;
+}
+
+.boton-ejercicio2 {
+    background-color: #8bc820;   /* verde */
+}
+
+.boton-ejercicio2:hover {
+    background-color: #6fa019;
+}
+
+.boton-menu:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 3px;
+}
+
+/* ---------- Tarjeta de los formularios ---------- */
+.tarjeta {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: 2px solid #007bff;
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ---------- Resultados y mensajes ---------- */
+.resultado p,
+.mensaje {
+    margin: 14px 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+.error {
+    margin-top: 16px;
+    padding: 10px 12px;
+    background-color: #fdecea;
+    border: 1px solid #f5c2c7;
+    border-radius: 4px;
+    color: #842029;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Pantallas pequeñas ---------- */
+@media (max-width: 540px) {
+    .tarjeta {
+        margin: 16px;
+    }
+}
